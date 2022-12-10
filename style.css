@@ -174,6 +174,7 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  width: 90%;
 }
 
 section,
@@ -222,14 +223,85 @@ nav a {
 }
 
 /* 1) use flexbox to get the heading/logo and the navigation on opposite sides of the wrapper. Use flexbox to vertically align the flex children */
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* 2) use flexbox to get the navigation items to sit next to each other and remove the bullets */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
 /* 3. give the banner-profile-overview the background image, make it look like the final design (you may need to revisit this after styling the profile bar)*/
+.banner-profile-overview {
+  background-image: url(./assets/header-bkground.jpg);
+  background-position: center;
+  background-size: cover;
+  /* 8. add a min-height to the banner to show more of the background - why does the banner shrink when the img is positioned absolutely? - when an element is positioned absolutely, it loses it footprint and the parent element will collapse */
+  min-height: 400px;
+  /* 9. use positioning to get the profile bar to move to the bottom of the banner*/
+  position: relative;
+}
+
 /* 4. Style the profile image - make it circular, give it a border, make it smaller */
+.profile-img {
+  border-radius: 50%;
+  width: 250px;
+  border: 4px solid white;
+  /* 7. use positioning to get profile image to more similar to the design */
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+}
+
 /* 5. Use flexbox to get the image, profile stats bar and edit pawful button to sit next to each other. Make the image not stretch (do not use height, use flexbox) */
+.profile-bar .wrapper {
+  display: flex;
+  align-items: center;
+  /* 7. use positioning to get profile image to more similar to the design */
+  position: relative;
+}
+
 /* 6. style the profile stats bar so that it is similar to the design given */
-/* 7. use positioning to get profile image to more similar to the design */
-/* 8. add a min-height to the banner to show more of the background - why does the banner shrink when the img is positioned absolutely? - when an element is positioned absolutely, it loses it footprint and the parent element will collapse */
+.profile-bar-stats ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* 7. use positioning to get profile image to more similar to the design */
+  position: relative;
+}
+
+.profile-bar-stats span {
+  display: block;
+}
+
 /* 9. use positioning to get the profile bar to move to the bottom of the banner*/
+.profile-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 /* 10. see the hint image provided. Create a before element off of the wrapper nested in the .profile-bar to create an empty block level element. This will help prevent the stats bar from sliding underneath the profile image. In the hint image, there is a border to show you where the pseudo element sits. Depending on the order in which you style things. The pseudo element may not have a height, this is fine as we are only concerned about width. Theres a second hint underneath the image, hover over it to reveal what properties will help*/
+.profile-bar .wrapper::before {
+  content: '';
+  display: block;
+  flex-basis: 300px;
+}
+
 /* 11. now that we have the before element, we want the profile stats bar to take up the rest of the remaining space in the profile bar (hint: flexbox). */
+.profile-bar-stats {
+  flex-grow: 1;
+}
+
 /* 12. polish everything to make it look like the design */
+.profile-bar-stats-heading {
+  font-weight: 600;
+}
+
+.profile-bar-stats li {
+  margin-right: 25px;
+}
