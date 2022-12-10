@@ -305,3 +305,33 @@ nav ul {
 .profile-bar-stats li {
   margin-right: 25px;
 }
+
+/* Responive specific styling */
+/* 1. since the HTML has been rejigged, the profile-info, follow to and trending widget are now wrapped in a .profile-follow-trending-widgets container. Adjust the width to make it look closer to the design. Rejig the margins on the left items so that it is closer to the design*/
+/* 2. hide all elements (copy of widgets on the left, ellipses button, etc) that should not be visible on desktop view - they have a shared class, take a look at the html */
+/* 3. create a media query for medium devices (975px). At this breakpoint, do the following steps: */
+/* 4. hide elements that should only show on large screens, they have a shared class */
+/* 5. reveal elements that should show on medium screens, they have a shared class */
+/* 6. hide the edit pawfile button */
+/* 7. using flexbox, get all of the profile info, to follow and trending widgets to stack on top of each other on the left side of the screen. */
+/* 8. rejig the margins to make it look like the medium screen design */
+/* 9. create a media query for a smaller breakpoint (700px). At this breakpoint, do the following steps:*/
+/* 10. reveal all elements that should be visible on small screens */
+/* 11. We now want to visually hide the h1. Although its not visible, we still want search engines and assistive tech to be able to pick it up. Check the class provided in the html, for the styles be sure to grab it from the forms lesson */
+/* 12. hide the main navigation and more-option/ellipse button */
+/* 13. give the header some padding on the top and bottom */
+/* 14. using flexbox center the woofer icon */
+/* 15. hide the follow-trending-widgets container */
+/* 16. change the background color of profile info and fix the margin collapse */
+/* 17. using flexbox get the profile info and timeline to stack on top of each other, you may need an advanced selector here */
+/* 18. remove any unnecessary margins */
+/* 19. hide the photos container */
+/* 20. reset any dimensions set on .profile-follow-trending-widgets. Why is this necessary? what happens to flex basis when flex-direction is set to column?*/
+/* 21. reduce the height on the banner */
+/* 22. restyle the profile image, make smaller, change position */
+/* 23. hide the pseudo element before the stats bar. If you have not done the first exercise, review all items in the wrapper in .banner-profile-overview with your dev tools */
+/* 24. reset the profile stats bar so that it no longer takes up the remaining space, center the whole stat bar and set it to center text align */
+/* 25. ensure there are equal amounts of space between the profile stats items. */
+/* 26. remove the margin off of Dug Keen and @dug */
+/* 27. create a media query for small screens (330px). At this breakpoint, do the following steps */
+/* 28. restyle the profile stats bar so that it looks closer to the design */
