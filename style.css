@@ -1,0 +1,235 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 700;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,html input[type=button],/* 1 */input[type=reset],input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body,
+figure {
+  margin: 0;
+}
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  background: #f5f5f5;
+  color: #333333;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section,
+header,
+.profile-bar {
+  background: #ffffff;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.btn {
+  background: #e40015;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  text-transform: capitalize;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid #e40015;
+  color: #e40015;
+  padding: 3px 20px;
+  font-size: 1.4rem;
+}
+
+/* header styles */
+h1 {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* banner profile overview styles */
+.banner-profile-overview {
+  padding: 20px 0;
+}
+
+/* 1) use flexbox to get the heading/logo and the navigation on opposite sides of the wrapper. Use flexbox to vertically align the flex children */
+/* 2) use flexbox to get the navigation items to sit next to each other and remove the bullets */
+/* 3. give the banner-profile-overview the background image, make it look like the final design (you may need to revisit this after styling the profile bar)*/
+/* 4. Style the profile image - make it circular, give it a border, make it smaller */
+/* 5. Use flexbox to get the image, profile stats bar and edit pawful button to sit next to each other. Make the image not stretch (do not use height, use flexbox) */
+/* 6. style the profile stats bar so that it is similar to the design given */
+/* 7. use positioning to get profile image to more similar to the design */
+/* 8. add a min-height to the banner to show more of the background - why does the banner shrink when the img is positioned absolutely? - when an element is positioned absolutely, it loses it footprint and the parent element will collapse */
+/* 9. use positioning to get the profile bar to move to the bottom of the banner*/
+/* 10. see the hint image provided. Create a before element off of the wrapper nested in the .profile-bar to create an empty block level element. This will help prevent the stats bar from sliding underneath the profile image. In the hint image, there is a border to show you where the pseudo element sits. Depending on the order in which you style things. The pseudo element may not have a height, this is fine as we are only concerned about width. Theres a second hint underneath the image, hover over it to reveal what properties will help*/
+/* 11. now that we have the before element, we want the profile stats bar to take up the rest of the remaining space in the profile bar (hint: flexbox). */
+/* 12. polish everything to make it look like the design */
